@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## INF633 - Advanced 3D Graphics (2021 - 2022)
 
 You can use the [editor on GitHub](https://github.com/edualvarado/inf633-2021-2022/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
