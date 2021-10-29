@@ -18,8 +18,6 @@ Here, you will find a brief introduction to install and setup Unity, in addition
 
 Part of this information, in addition to all the content of the course sessions, tasks descriptions and tips can be found in the official page for the lab course: https://edualvarado.github.io/inf633-2021-2022/
 
-------
-
 ### Installing Unity
 
 Link to download: https://unity.com/download
@@ -30,8 +28,6 @@ Link to download: https://unity.com/download
 - Make sure you have a text editor installed and configured for C#. [Visual Studio Code](https://code.visualstudio.com/Download) is a popular option, but you can use any other code editor or IDE.
 - Now you should be able to open Unity. Make sure that you can successfully launch it, that your graphics drivers are working or that you do not have any particular problem.
 
-------
-
 ### First setup in Unity
 
 Before even importing the lab project, let's have a general overview of Unity. First, we first need to associate Unity with our chosen C# editor.
@@ -40,8 +36,6 @@ Before even importing the lab project, let's have a general overview of Unity. F
 - Change `External Script Editor` to your preferred text editor.
 - Make sure that your text editor is configured to handle C#.
 - From now on, when you are writing your scripts, self-completion for the Unity API among other tools will be enable while you program your scripts in Unity.
-
-------
 
 ### Unity Interface and Controls
 
@@ -76,23 +70,24 @@ Some fast tips regarding the overall workflow in Unity:
 - If you have errors in your scripts, they will show up in red in the bottom left corner. Otherwise, you can use the Console window.
 - Any variable that you set as `public` will be visible in the interface and editable in real-time. Although during this lab we will not focus on the code syntax and efficiency, normally it is a good practice to declared the variable as `private`  and serialized it to make it visible in the Unity inspector using `[SerializeField]`.
 
-------
-
 ### Create a basic scene
 
-Working in progress
+*Working in progress*
 
 ------
 
 ## Starting our project
 
-### Opening the lab project
+### Opening the project
 
-
+*Working in progress*
 
 ### Running the Scene
 
 - To run the project, just click on the **Play** button at the top menu. The windows will be colored when the project is running.
 - For the lab session project:
-  - 
+  - Add new brushes before running the project, by selecting the terrain and drag-and-dropping the script in its inspector.
+  - Select the terrain and click on the **Use** button of one of the brushes
+  - You can then paint on the terrain (in the game view) with your brush.
+  - Click the **Play** button again to stop. Changes will be saved.
 
