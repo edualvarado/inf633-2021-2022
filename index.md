@@ -108,8 +108,82 @@ Copy this file to use it as a base for your own brushes, by changing the name of
 ```
 <p align=center>Code Snippet 3: Useful variables</p>
 
-
 ## SESSION 02 - Object Placement
+
+In this second session, you will design brushes that place objects on the terrain. Here it will be trees, but you can search for or provide other objects.
+
+The base code for this session shows how to instantiate one object where the user clicked, and four at the corners of the drawing region. Note that these types of brushes extend the \texttt{InstanceBrush} class instead of the TerrainBrush one used in the previous session.
+
+```csharp
+public class SimpleInstanceBrush : InstanceBrush {
+
+    public override void draw(float x, float z) {
+        spawnObject(x, z);
+        spawnObject(x - radius, z - radius);
+        spawnObject(x - radius, z + radius);
+        spawnObject(x + radius, z - radius);
+        spawnObject(x + radius, z + radius);
+    }
+}
+```
+<p align=center>Code Snippet 4: "Scripts/02\_Instance Brushes/SimpleInstanceBrush.cs"</p>
+
+Like in the previous session, you can use this file as a base for your own brushes by copying it and changing the file and class names.
+
+_IMAGE_
+
+You can set the object that will be instantiated by drag-and-dropping a model in the Object\_prefab parameter of the terrain at run-time. A few models of trees are already in the project, in Standard Assets > Environment > SpeedTree and then the file with a tree icon in one of the three sub-folders.
+
+To remove objects, you can use the default tools provided in the original terrain editor by Unity. For this, select the terrain and go to the \texttt{terrain > Paint trees}
+tab (in the inspector). You can then shift-click on the terrain to remove objects around your cursor. Note that this works outside of play mode, as opposed to the brushes you implement.
+
+### Brush ideas
+
+- Random placement in a square
+- Random placement in a circle
+- Placement on an grid, optionally rotated (crops)
+- Placement in small clusters of objects (bushes, groves)
+- Minimal distance brush, that makes sure that every placed object has $>$\texttt{x} free space
+- Terrain-related placement:
+-- Prevent placement if the terrain is too steep
+-- Prevent placement depending on the altitude
+
+### Object ideas
+
+- Trees
+- Bushes
+- Rocks
+- Buildings
+
+### Useful functions and variables
+
+```csharp
+  // Spawns an object at coordinates (x, z)
+  void spawnObject(float x, float z);
+
+  // Returns the interpolated height of the terrain
+  float terrain.getInterp(float x, float z);
+  // Returns the steepness of the terrain
+  float terrain.getSteepness(float x, float z);
+
+  // Return the number of objects instantiated
+  int terrain.getObjectCount();
+  // Return the location of an object
+  Vector3 terrain.getObjectLoc(int index);
+  // ADVANCED - Return an instantiated object
+  // See Unity manual of TreeInstance for more details
+  TreeInstance terrain.getObject(int index);
+```
+<p align=center>Code Snippet 5: Useful functions</p>
+
+```csharp
+  // Object to instantiate by default
+  GameObject terrain.object_prefab;
+  // Min and max size of the instantiated objects
+  float terrain.min_scale;
+  float terrain.max_scale;
+```
+<p align=center>Code Snippet 6: Useful variables</p>
 
 
 ## SESSION 03 - Character Animation
