@@ -61,6 +61,7 @@ public class SimpleBrush : TerrainBrush {
         }
     }
 ```
+<p align=center>Code Snippet 1: "Scripts/01Terrain Brushes/SimpleBrush.cs"</p>
 
 Copy this file to use it as a base for your own brushes, by changing the name of the copied file and class name.
 
@@ -95,7 +96,7 @@ Copy this file to use it as a base for your own brushes, by changing the name of
   // Print to game viewport (top left)
   terrain.debug.text = "message";
 ```
-<p align=center>Useful functions</p>
+<p align=center>Code Snippet 2: Useful functions</p>
 
 ```csharp
   // Access the underlying terrain
@@ -105,6 +106,8 @@ Copy this file to use it as a base for your own brushes, by changing the name of
   int radius;
   int terrain.brush_radius;
 ```
+<p align=center>Code Snippet 3: Useful variables</p>
+
 
 ## SESSION 02 - Object Placement
 
