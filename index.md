@@ -1,10 +1,45 @@
-## INF633 - Advanced 3D Graphics (2021 - 2022)
+# INF633 - Advanced 3D Graphics (2021 - 2022)
 
-You can use the [editor on GitHub](https://github.com/edualvarado/inf633-2021-2022/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Welcome to the lab sessions of INF633! The goal of this project is to create, starting from a flat empty terrain, one with interesting features, objects and dynamic, living creatures all interacting together. For this, multiple edition tools will be created and basic principles of animation and crowd simulation used to give life to the virtual world.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Setup and Global Info
 
-### Markdown
+### Unity Launch
+
+- Download and extract the project archive from Moodle
+- Launch Unity
+- Create/log into your Unity account
+- Open the project by clicking the "Add" button and selecting the extracted folder
+- Once the project is opened, in the project file explorer, go to Assets/Scenes and open SampleScene.unity
+
+### Text editor setup
+
+- In Unity, go to Edit > Preferences > External Tools
+- Change External Script Editor to your preferred text editor
+- Make sure that your text editor is configured to handle C#
+
+### 3D controls
+- Left click to select an object
+- Right click to rotate the camera on itself
+- Right click+WASD to move the camera in the environment
+- Middle click to pan the camera
+- Scroll wheel to zoom/unzoom
+- Alt+Left click to rotate the camera around the focus point
+
+### Interface and interaction
+- If you have errors in your scripts, they will show up in \textcolor{red}{red} in the bottom left corner
+- You can also see errors in the console tab, next to the game tab
+- Any variable that you set as \texttt{public} will be visible in the interface and editable in real-time
+
+
+### Running the project
+- Add new brushes before running the project, by selecting the terrain and drag-and-dropping the script in its inspector
+- To run the project, click on the play button at the top. The button will turn blue when the project is running
+- Select the terrain and click on the use button of one of the brushes
+- You can then paint on the terrain (in the game view) with your brush
+- Click the play button again to stop
+
+---
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
