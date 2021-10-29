@@ -62,9 +62,52 @@ public class SimpleBrush : TerrainBrush {
     }
 ```
 
+Copy this file to use it as a base for your own brushes, by changing the name of the copied file and class name.
 
+### Brush ideas
+
+- Incremental increase/decrease
+- Gaussian increase/decrease
+- Smooth/healing brush
+- Random brush (add details)
+- Different brush shapes (square, circle, etc)
+- Volume-preserving brush (move matter around instead of removing/adding it)
+- Erosion brush (simulates water droplets falling in the region, eroding the terrain)
+- Coherent noise brush (Perlin Noise or other approach, using Mathf.PerlinNoise or your own implementation)
+
+### Useful functions and variables
+
+```csharp
+// Get or set the height of the terrain at (x, z)
+  float terrain.get(int x, int z);
+  void terrain.set(int x, int z, float height);
+  // Get the terrain normal at (x, z)
+  Vector3 terrain.getNormal(float x, float z);
+
+  // Get the terrain size
+  Vector3 terrain.gridSize();
+
+  // Reset the whole terrain to height=0
+  void terrain.reset();
+
+  // Print to the Unity console (next to game tab)
+  print("message");
+  // Print to game viewport (top left)
+  terrain.debug.text = "message";
+```
+<p align=center>Useful functions</p>
+
+```csharp
+  // Access the underlying terrain
+  CustomTerrain terrain;
+
+  // Radius of the brush
+  int radius;
+  int terrain.brush_radius;
+```
 
 ## SESSION 02 - Object Placement
+
 
 ## SESSION 03 - Character Animation
 
