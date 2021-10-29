@@ -1,12 +1,14 @@
-## INF633 - Advanced 3D Graphics (2021-2022) - Lab Course
+# INF633 - Advanced 3D Graphics (2021-2022) - Lab Course
 
 [Github Page](https://edualvarado.github.io/inf633-2021-2022/) | Moodle  
 
-
+*Image*
 
 [TOC]
 
 ------
+
+## First Steps
 
 ### Introduction
 
@@ -30,7 +32,7 @@ Link to download: https://unity.com/download
 
 ------
 
-### First steps in Unity
+### First setup in Unity
 
 Before even importing the lab project, let's have a general overview of Unity. First, we first need to associate Unity with our chosen C# editor.
 
@@ -41,6 +43,56 @@ Before even importing the lab project, let's have a general overview of Unity. F
 
 ------
 
-### Unity Interface
+### Unity Interface and Controls
 
-! [Image] (https://docs.unity3d.com/uploads/Main/Editor-Breakdown.png)
+Unity uses a modular window system. That means, that each part of the interface can be reorganized and placed as you like. By default, Unity will show a similar appearance to this one:
+
+<img src="https://docs.unity3d.com/uploads/Main/Editor-Breakdown.png" alt="Image" style="zoom: 80%;" />
+
+- **A - Top bar**. Here you can find some common tools such as Move, Rotate or Scale. Also, you can find the **Play** button to start your application, or **Pause** button, to stop it in the current frame. When it is paused, the **Step** button is available to go to the next frame.
+- **B - Hierarchy**. Here are all the elements in your *Scene*. Those elements (commonly named as *Game Objects* in Unity) can be anything: 3D models, cameras, illumination... On top of that, you find the *Scene*. A `Scene` is the parent element that serves as a environment where you place all your *Game Object*. 
+- **C** - **Scene view**. This window is the editor where you edit all your *Game Objects* before clicking **Play** in the normal Unity workflow.
+- **D - Game view.** This window shows the rendered, running application when you click in **Play**. It will show whatever *Display* you have decided to show. Each of these displays is associated to a *Camera Game Object*. Keep in mind that you could still interact with the Game view during the **Play** mode by scripting, as you might do in any game.
+- **E - Inspector**. One of the most important parts. Each *Game Object* has an Inspector associated that describes it. These descriptions are based on *Components* (for example, a *Transform Component* would describe the position, rotation and scale of the *Game Object* which has been associated to). You can attach the built-in components that Unity brings, or your own scripts in C#.
+- **F - Project**. Here you can find all your assets of Unity, such as your 3D models, scripts, textures, materials...
+- **G - Console**. The last line provided by the console, that displays errors, warnings or any other message that you have programmed to show during run-time. Next to the Project window, you can find the Console window where the entire space is dedicated to debugging.
+
+### 3D Controls
+
+In the Scene view:
+
+- **Left click** to select a *Game Object*.
+- **Right click** to rotate the camera on itself.
+  - **Right click + WASD** to move the camera in the environment.
+- **Middle click** to pan the camera.
+- **Scroll wheel** to zoom in/out.
+- **F** to focus the camera on the selected *Game Object*.
+- **Alt + Left click** to rate the camera around the focus point.
+
+### Interface and Interaction
+
+Some fast tips regarding the overall workflow in Unity:
+
+- If you have errors in your scripts, they will show up in red in the bottom left corner. Otherwise, you can use the Console window.
+- Any variable that you set as `public` will be visible in the interface and editable in real-time. Although during this lab we will not focus on the code syntax and efficiency, normally it is a good practice to declared the variable as `private`  and serialized it to make it visible in the Unity inspector using `[SerializeField]`.
+
+------
+
+### Create a basic scene
+
+Working in progress
+
+------
+
+## Starting our project
+
+### Opening the lab project
+
+
+
+### Running the Scene
+
+- To run the project, just click on the **Play** button at the top menu. The windows will be colored when the project is running.
+- For the lab session project:
+  - 
+
