@@ -39,6 +39,42 @@ Welcome to the lab sessions of INF633! The goal of this project is to create, st
 - You can then paint on the terrain (in the game view) with your brush
 - Click the play button again to stop
 
+## SESSION 01 - Terrain edition
+
+### Getting started
+
+In this session, you will be designing and implementing brushes, allowing you to dynamically edit the terrain. Your brushes will extend the base class
+TerrainBrush and control terrain modifications in a restricted area around the mouse, by implementing the method draw.
+
+The base code for this session can be found in the following file, and shows how to set all cells in the current region to a defined height.
+
+```csharp
+public class SimpleBrush : TerrainBrush {
+
+    public float height = 5;
+
+    public override void draw(int x, int z) {
+        for (int zi = -radius; zi <= radius; zi++) {
+            for (int xi = -radius; xi <= radius; xi++) {
+                terrain.set(x + xi, z + zi, height);
+            }
+        }
+    }
+```
+
+
+
+## SESSION 02 - Object Placement
+
+## SESSION 03 - Character Animation
+
+Work in progress...
+
+## SESSION 03 - Crowds and Evolution
+
+Work in progress...
+
+
 ---
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
