@@ -13,7 +13,7 @@
 	- [Interface and interaction](#Interfaceandinteraction)
 - [Starting our project](#Startingourproject)
 	- [Opening the project](#Openingtheproject)
-	- [Runningthescene](#Runningthescene)
+	- [Running the scene](#Runningthescene)
 
 
 ------
