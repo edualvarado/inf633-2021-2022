@@ -163,19 +163,11 @@ Copy this file to use it as a base for your own brushes, by changing the name of
 </p>
 
 <p align="center">
-    <img src="https://edualvarado.github.io/inf633-2021-2022/01-TerrainBrushGifs/gaussv2-brush.gif" width="200">
+    <img src="https://edualvarado.github.io/inf633-2021-2022/01-TerrainBrushGifs/smooth-brush.gif" width="200">
 &nbsp; &nbsp;
     <img src="https://edualvarado.github.io/inf633-2021-2022/01-TerrainBrushGifs/random-brush.gif" width="200">
 &nbsp; &nbsp;
-    <img src="https://edualvarado.github.io/inf633-2021-2022/01-TerrainBrushGifs/randomv2-brush.gif" width="200">
-</p>
-
-<p align="center">
-    <img src="https://edualvarado.github.io/inf633-2021-2022/01-TerrainBrushGifs/smooth-brush.gif" width="200">
-&nbsp; &nbsp;
-    <img src="https://edualvarado.github.io/inf633-2021-2022/01-TerrainBrushGifs/smoothv2-brush.gif" width="200">
-&nbsp; &nbsp;
-    <img src="https://edualvarado.github.io/inf633-2021-2022/01-TerrainBrushGifs/volcano-brush.gif" width="200">
+    <img src="https://edualvarado.github.io/inf633-2021-2022/01-TerrainBrushGifs/variablegauss-brush.gif" width="200">
 </p>
 
 ### Useful functions and variables
