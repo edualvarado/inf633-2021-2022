@@ -16,7 +16,11 @@
 - [Starting our project](#Startingourproject)
 	- [Opening the project](#Openingtheproject)
 	- [Running the scene](#Runningthescene)
-
+- [Session 01 - Terrain Edition](#Session01)
+	- [Getting started](#Session01Gettingstarted)
+	- [Brush ideas](#Session01Brushideas)
+	- [Examples](#Session01Examples)
+	- [Useful functions and variables](#Session01Useful)
 
 ------
 
@@ -115,8 +119,10 @@ Some fast tips regarding the overall workflow in Unity:
 
 ------
 
+<a name="Session01"></a>
 ## SESSION 01 - Terrain edition
 
+<a name="Session01Gettingstarted"></a>
 ### Getting started
 
 In this session, you will be designing and implementing brushes, allowing you to dynamically edit the terrain. Your brushes will extend the base class
@@ -141,6 +147,7 @@ public class SimpleBrush : TerrainBrush {
 
 Copy this file to use it as a base for your own brushes, by changing the name of the copied file and class name.
 
+<a name="Session01Brushideas"></a>
 ### Brush ideas
 
 - Simple brush (square shape - already done!)
@@ -154,6 +161,7 @@ Copy this file to use it as a base for your own brushes, by changing the name of
 - Erosion brush (simulates water droplets falling in the region, eroding the terrain)
 - Coherent noise brush (Perlin Noise or other approach, using Mathf.PerlinNoise or your own implementation)
 
+<a name="Session01Examples"></a>
 ### Examples
 
 <p align="center">
@@ -172,6 +180,7 @@ Copy this file to use it as a base for your own brushes, by changing the name of
     <img src="https://edualvarado.github.io/inf633-2021-2022/01-TerrainBrushGifs/variablegauss-brush.gif" width="200">
 </p>
 
+<a name="Session01Useful"></a>
 ### Useful functions and variables
 
 ```csharp
