@@ -2,8 +2,6 @@
 
 [Github Page](https://edualvarado.github.io/inf633-2021-2022/) | [Moodle](https://moodle.polytechnique.fr/enrol/index.php?id=13007)
 
-*Image*
-
 - [First steps](#Firststeps)
 - [Introduction](#Introduction)
 - [Installing Unity](#InstallingUnity)
