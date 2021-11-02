@@ -1,6 +1,6 @@
 # INF633 - Advanced 3D Graphics (2021 - 2022)
 
-Welcome to the lab sessions of INF633! The goal of this project is to create, starting from a flat empty terrain, one with interesting features, objects and dynamic, living creatures all interacting together. For this, multiple edition tools will be created and basic principles of animation and crowd simulation used to give life to the virtual world.
+[Github Repoitory](https://github.com/edualvarado/inf633-2021-2022) | [Github Page](https://edualvarado.github.io/inf633-2021-2022/) | [Moodle](https://moodle.polytechnique.fr/enrol/index.php?id=13007)
 
 ------
 
@@ -24,11 +24,11 @@ Welcome to the lab sessions of INF633! The goal of this project is to create, st
 <a name="Introduction"></a>
 ### Introduction
 
-Welcome to the repository for the lab sessions of INF633! 
+Welcome to the official page for the lab sessions of INF633! 
 
-Here, you will find a brief introduction to install and setup Unity, in addition to some quick tips and examples for those who didn't use this game-engine before. 
+The goal of this project is to create, starting from a flat empty terrain, one with interesting features, objects and dynamic, living creatures all interacting together. For this, multiple edition tools will be created and basic principles of animation and crowd simulation used to give life to the virtual world.
 
-Part of this information, in addition to all the content of the course sessions, tasks descriptions and tips can be found in the official page for the lab course:[https://edualvarado.github.io/inf633-2021-2022/](https://edualvarado.github.io/inf633-2021-2022/)
+In this page, you will find the same introduction to install and setup Unity that you can find also in the README.md of the repository at [https://github.com/edualvarado/inf633-2021-2022](https://github.com/edualvarado/inf633-2021-2022), and also the description and content for each lab session.
 
 <a name="InstallingUnity"></a>
 ### Installing Unity
