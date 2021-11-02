@@ -1,7 +1,7 @@
 # INF633 - Advanced 3D Graphics (2021-2022) - Lab Course
 
 
-  [Github Page](https://edualvarado.github.io/inf633-2021-2022/) | [Moodle](https://moodle.polytechnique.fr/enrol/index.php?id=13007)
+<p align="center"> [Github Page](https://edualvarado.github.io/inf633-2021-2022/) | [Moodle](https://moodle.polytechnique.fr/enrol/index.php?id=13007) </p>
 
 ------
 
