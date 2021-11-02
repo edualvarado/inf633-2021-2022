@@ -1,20 +1,20 @@
 # INF633 - Advanced 3D Graphics (2021-2022) - Lab Course
 
-<div align="center">
-  [Github Page](https://edualvarado.github.io/inf633-2021-2022/) | [Moodle](https://moodle.polytechnique.fr/enrol/index.php?id=13007)
-</div>
 
+  [Github Page](https://edualvarado.github.io/inf633-2021-2022/) | [Moodle](https://moodle.polytechnique.fr/enrol/index.php?id=13007)
+
+------
 
 - [First steps](#Firststeps)
-- [Introduction](#Introduction)
-- [Installing Unity](#InstallingUnity)
-- [First setup in Unity](#FirstsetupinUnity)
-- [Unity interface and controls](#Unityinterfaceandcontrols)
-- [3D controls](#3Dcontrols)
-- [Interface and interaction](#Interfaceandinteraction)
+	- [Introduction](#Introduction)
+	- [Installing Unity](#InstallingUnity)
+	- [First setup in Unity](#FirstsetupinUnity)
+	- [Unity interface and controls](#Unityinterfaceandcontrols)
+	- [3D controls](#3Dcontrols)
+	- [Interface and interaction](#Interfaceandinteraction)
 - [Starting our project](#Startingourproject)
-- [Opening the project](#Openingtheproject)
-- [Runningthescene](#Runningthescene)
+	- [Opening the project](#Openingtheproject)
+	- [Runningthescene](#Runningthescene)
 
 
 ------
