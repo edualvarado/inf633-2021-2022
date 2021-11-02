@@ -2,6 +2,22 @@
 
 Welcome to the lab sessions of INF633! The goal of this project is to create, starting from a flat empty terrain, one with interesting features, objects and dynamic, living creatures all interacting together. For this, multiple edition tools will be created and basic principles of animation and crowd simulation used to give life to the virtual world.
 
+------
+
+- [First steps](#Firststeps)
+	- [Introduction](#Introduction)
+	- [Installing Unity](#InstallingUnity)
+	- [First setup in Unity](#FirstsetupinUnity)
+	- [Unity interface and controls](#Unityinterfaceandcontrols)
+	- [3D controls](#3Dcontrols)
+	- [Interface and interaction](#Interfaceandinteraction)
+- [Starting our project](#Startingourproject)
+	- [Opening the project](#Openingtheproject)
+	- [Running the scene](#Runningthescene)
+
+
+------
+
 <a name="Firststeps"></a>
 ## First Steps
 
@@ -94,6 +110,8 @@ Some fast tips regarding the overall workflow in Unity:
   - Select the terrain and click on the **Use** button of one of the brushes
   - You can then paint on the terrain (in the game view) with your brush.
   - Click the **Play** button again to stop. Changes will be saved.
+
+------
 
 ## SESSION 01 - Terrain edition
 
