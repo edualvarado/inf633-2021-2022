@@ -143,10 +143,12 @@ Copy this file to use it as a base for your own brushes, by changing the name of
 
 ### Brush ideas
 
+- Simple brush (square shape - already done!)
+- Flat brush (to fix terrain always to "0")
 - Incremental increase/decrease
 - Gaussian increase/decrease
 - Smooth/healing brush
-- Random brush (add details)
+- Random brush
 - Different brush shapes (square, circle, etc)
 - Volume-preserving brush (move matter around instead of removing/adding it)
 - Erosion brush (simulates water droplets falling in the region, eroding the terrain)
