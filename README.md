@@ -1,6 +1,6 @@
 # INF633 - Advanced 3D Graphics (2021-2022) - Lab Course
 
-[Github Page](https://edualvarado.github.io/inf633-2021-2022/) | Moodle  
+[Github Page](https://edualvarado.github.io/inf633-2021-2022/) | [Moodle](https://moodle.polytechnique.fr/enrol/index.php?id=13007)
 
 *Image*
 
@@ -70,17 +70,17 @@ Some fast tips regarding the overall workflow in Unity:
 - If you have errors in your scripts, they will show up in red in the bottom left corner. Otherwise, you can use the Console window.
 - Any variable that you set as `public` will be visible in the interface and editable in real-time. Although during this lab we will not focus on the code syntax and efficiency, normally it is a good practice to declared the variable as `private`  and serialized it to make it visible in the Unity inspector using `[SerializeField]`.
 
-### Create a basic scene
-
-*Working in progress*
-
 ------
 
 ## Starting our project
 
 ### Opening the project
 
-*Working in progress*
+- Clone this repository.
+- Make sure you have Unity Hub and an Unity built installed (as we describe in *Introduction*)
+- In Unity Hub, click in `Open > Add project from disk`
+- Select the parent folder of the repository, containing the Unity project. You will differentiate it because it contains folders such as `Assets` or `Packages`.
+- Open the project by selecting the installed built of Unity. That's all!
 
 ### Running the Scene
 
