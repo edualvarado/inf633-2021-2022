@@ -154,6 +154,8 @@ Copy this file to use it as a base for your own brushes, by changing the name of
 - Erosion brush (simulates water droplets falling in the region, eroding the terrain)
 - Coherent noise brush (Perlin Noise or other approach, using Mathf.PerlinNoise or your own implementation)
 
+![Simple Brush](/01-TerrainBrushGifs/simple-brush.gif)
+
 ### Useful functions and variables
 
 ```csharp
