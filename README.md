@@ -8,8 +8,10 @@
 
 ------
 
+<a name="First Steps"></a>
 ## First Steps
 
+<a name="Introduction"></a>
 ### Introduction
 
 Welcome to the repository for the lab sessions of INF633! 
@@ -18,6 +20,7 @@ Here, you will find a brief introduction to install and setup Unity, in addition
 
 Part of this information, in addition to all the content of the course sessions, tasks descriptions and tips can be found in the official page for the lab course: https://edualvarado.github.io/inf633-2021-2022/
 
+<a name="Installing Unity"></a>
 ### Installing Unity
 
 Link to download: https://unity.com/download
@@ -28,6 +31,7 @@ Link to download: https://unity.com/download
 - Make sure you have a text editor installed and configured for C#. [Visual Studio Code](https://code.visualstudio.com/Download) is a popular option, but you can use any other code editor or IDE.
 - Now you should be able to open Unity. Make sure that you can successfully launch it, that your graphics drivers are working or that you do not have any particular problem.
 
+<a name="First setup in Unity"></a>
 ### First setup in Unity
 
 Before even importing the lab project, let's have a general overview of Unity. First, we first need to associate Unity with our chosen C# editor.
@@ -37,6 +41,7 @@ Before even importing the lab project, let's have a general overview of Unity. F
 - Make sure that your text editor is configured to handle C#.
 - From now on, when you are writing your scripts, self-completion for the Unity API among other tools will be enable while you program your scripts in Unity.
 
+<a name="Unity Interface and Controls"></a>
 ### Unity Interface and Controls
 
 Unity uses a modular window system. That means, that each part of the interface can be reorganized and placed as you like. By default, Unity will show a similar appearance to this one:
@@ -51,6 +56,7 @@ Unity uses a modular window system. That means, that each part of the interface 
 - **F - Project**. Here you can find all your assets of Unity, such as your 3D models, scripts, textures, materials...
 - **G - Console**. The last line provided by the console, that displays errors, warnings or any other message that you have programmed to show during run-time. Next to the Project window, you can find the Console window where the entire space is dedicated to debugging.
 
+<a name="3D Controls"></a>
 ### 3D Controls
 
 In the Scene view:
@@ -63,6 +69,7 @@ In the Scene view:
 - **F** to focus the camera on the selected *Game Object*.
 - **Alt + Left click** to rate the camera around the focus point.
 
+<a name="Interface and Interaction"></a>
 ### Interface and Interaction
 
 Some fast tips regarding the overall workflow in Unity:
@@ -72,8 +79,10 @@ Some fast tips regarding the overall workflow in Unity:
 
 ------
 
+<a name="Starting our project"></a>
 ## Starting our project
 
+<a name="Opening the project"></a>
 ### Opening the project
 
 - Clone this repository.
@@ -82,6 +91,7 @@ Some fast tips regarding the overall workflow in Unity:
 - Select the parent folder of the repository, containing the Unity project. You will differentiate it because it contains folders such as `Assets` or `Packages`.
 - Open the project by selecting the installed built of Unity. That's all!
 
+<a name="Running the Scene"></a>
 ### Running the Scene
 
 - To run the project, just click on the **Play** button at the top menu. The windows will be colored when the project is running.
