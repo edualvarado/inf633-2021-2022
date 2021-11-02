@@ -160,13 +160,8 @@ Copy this file to use it as a base for your own brushes, by changing the name of
     <img src="https://edualvarado.github.io/inf633-2021-2022/01-TerrainBrushGifs/fixed-brush.gif" width="200">
 &nbsp; &nbsp; &nbsp;
     <img src="https://edualvarado.github.io/inf633-2021-2022/01-TerrainBrushGifs/gauss-brush.gif" width="200">
+&nbsp; &nbsp; &nbsp;
 </p>
-<p align="center">
-image1
-	&nbsp; &nbsp; &nbsp;
-image2
-	&nbsp; &nbsp; &nbsp;
-image3</p>
 
 ### Useful functions and variables
 
