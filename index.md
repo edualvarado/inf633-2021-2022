@@ -254,7 +254,11 @@ tab (in the inspector). You can then shift-click on the terrain to remove object
 - Terrain-related placement:
 - Prevent placement if the terrain is too steep (using a threshold angle)
 - Prevent placement depending on the altitude `h`
-- You can try to create arrays of elements, and place them according to these rules (array with [palm, small tree, tall tree], and place them as a function of height ranges).
+- You can try to create arrays of elements, and place them according to these rules (array with [palm, small tree, tall tree], and place them as a function of height ranges as shown in the figure below).
+
+<p align="center">
+    <img src="https://edualvarado.github.io/inf633-2021-2022/02-InstancesBrushGifs/height_dependent.gif" width="400">
+</p>
 
 ### Object ideas
 
