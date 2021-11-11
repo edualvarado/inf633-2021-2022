@@ -5,7 +5,7 @@
 [Github Repository](https://github.com/edualvarado/inf633-2021-2022) | [Github Page](https://edualvarado.github.io/inf633-2021-2022/) | [Moodle](https://moodle.polytechnique.fr/enrol/index.php?id=13007)
 
 ------
-
+<!--
 - [First steps](#Firststeps)
 	- [Introduction](#Introduction)
 	- [Installing Unity](#InstallingUnity)
@@ -25,12 +25,23 @@
 	- [Getting started](#Session02Gettingstarted)
 	- [Brush ideas](#Session02Brushideas)
 	- [Useful functions and variables](#Session02Useful)
+-->
+- [First steps](#Firststeps)
+- [Starting our project](#Startingourproject)
+- [Session 01 - Terrain Edition](#Session01)
+	- [Getting started](#Session01Gettingstarted)
+	- [Brush ideas](#Session01Brushideas)
+	- [Examples](#Session01Examples)
+	- [Useful functions and variables](#Session01Useful)
+- [Session 02 - Object Placement](#Session02)
+	- [Getting started](#Session02Gettingstarted)
+	- [Brush ideas](#Session02Brushideas)
+	- [Useful functions and variables](#Session02Useful)
 ------
 
 <a name="Firststeps"></a>
 ## First Steps
 
-<a name="Introduction"></a>
 ### Introduction
 
 Welcome to the official page for the lab sessions of INF633! 
@@ -39,7 +50,6 @@ The goal of this project is to create, starting from a flat empty terrain, one w
 
 In this page, you will find the same introduction to install and setup Unity that you can find also in the README.md of the repository at [https://github.com/edualvarado/inf633-2021-2022](https://github.com/edualvarado/inf633-2021-2022), and also the description and content for each lab session.
 
-<a name="InstallingUnity"></a>
 ### Installing Unity
 
 Link to download: [https://unity.com/download](https://unity.com/download)
@@ -50,7 +60,6 @@ Link to download: [https://unity.com/download](https://unity.com/download)
 - Make sure you have a text editor installed and configured for C#. [Visual Studio Code](https://code.visualstudio.com/Download) is a popular option, but you can use any other code editor or IDE.
 - Now you should be able to open Unity. Make sure that you can successfully launch it, that your graphics drivers are working or that you do not have any particular problem.
 
-<a name="FirstsetupinUnity"></a>
 ### First Setup in Unity
 
 Before even importing the lab project, let's have a general overview of Unity. First, we first need to associate Unity with our chosen C# editor.
@@ -60,7 +69,6 @@ Before even importing the lab project, let's have a general overview of Unity. F
 - Make sure that your text editor is configured to handle C#.
 - From now on, when you are writing your scripts, self-completion for the Unity API among other tools will be enable while you program your scripts in Unity.
 
-<a name="Unityinterfaceandcontrols"></a>
 ### Unity Interface and Controls
 
 Unity uses a modular window system. That means, that each part of the interface can be reorganized and placed as you like. By default, Unity will show a similar appearance to this one:
@@ -75,7 +83,6 @@ Unity uses a modular window system. That means, that each part of the interface 
 - **F - Project**. Here you can find all your assets of Unity, such as your 3D models, scripts, textures, materials...
 - **G - Console**. The last line provided by the console, that displays errors, warnings or any other message that you have programmed to show during run-time. Next to the Project window, you can find the Console window where the entire space is dedicated to debugging.
 
-<a name="3Dcontrols"></a>
 ### 3D Controls
 
 In the Scene view:
@@ -88,7 +95,6 @@ In the Scene view:
 - **F** to focus the camera on the selected *Game Object*.
 - **Alt + Left click** to rate the camera around the focus point.
 
-<a name="Interfaceandinteraction"></a>
 ### Interface and Interaction
 
 Some fast tips regarding the overall workflow in Unity:
@@ -101,7 +107,6 @@ Some fast tips regarding the overall workflow in Unity:
 <a name="Startingourproject"></a>
 ## Starting our project
 
-<a name="Openingtheproject"></a>
 ### Opening the project
 
 - Clone this repository.
@@ -110,7 +115,6 @@ Some fast tips regarding the overall workflow in Unity:
 - Select the parent folder of the repository, containing the Unity project. You will differentiate it because it contains folders such as `Assets` or `Packages`.
 - Open the project by selecting the installed built of Unity. That's all!
 
-<a name="Runningthescene"></a>
 ### Running the scene
 
 - To run the project, just click on the **Play** button at the top menu. The windows will be colored when the project is running.
