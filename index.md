@@ -5,7 +5,7 @@
 [Github Repository](https://github.com/edualvarado/inf633-2021-2022) | [Github Page](https://edualvarado.github.io/inf633-2021-2022/) | [Moodle](https://moodle.polytechnique.fr/enrol/index.php?id=13007)
 
 ------
-<!--
+
 - [First steps](#Firststeps)
 	- [Introduction](#Introduction)
 	- [Installing Unity](#InstallingUnity)
@@ -25,18 +25,7 @@
 	- [Getting started](#Session02Gettingstarted)
 	- [Brush ideas](#Session02Brushideas)
 	- [Useful functions and variables](#Session02Useful)
--->
-- [First steps](#Firststeps)
-- [Starting our project](#Startingourproject)
-- [Session 01 - Terrain Edition](#Session01)
-	- [Getting started](#Session01Gettingstarted)
-	- [Brush ideas](#Session01Brushideas)
-	- [Examples](#Session01Examples)
-	- [Useful functions and variables](#Session01Useful)
-- [Session 02 - Object Placement](#Session02)
-	- [Getting started](#Session02Gettingstarted)
-	- [Brush ideas](#Session02Brushideas)
-	- [Useful functions and variables](#Session02Useful)
+
 ------
 
 <a name="Firststeps"></a>
