@@ -180,6 +180,10 @@ Copy this file to use it as a base for your own brushes, by changing the name of
     <img src="https://edualvarado.github.io/inf633-2021-2022/01-TerrainBrushGifs/variablegauss-brush.gif" width="200">
 </p>
 
+<p align="center">
+    <img src="https://edualvarado.github.io/inf633-2021-2022/01-TerrainBrushGifs/volcano.gif" width="400">
+</p>
+
 <a name="Session01Useful"></a>
 ### Useful functions and variables
 
