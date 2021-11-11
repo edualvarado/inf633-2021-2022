@@ -21,7 +21,10 @@
 	- [Brush ideas](#Session01Brushideas)
 	- [Examples](#Session01Examples)
 	- [Useful functions and variables](#Session01Useful)
-
+- [Session 02 - Object Placement](#Session02)
+	- [Getting started](#Session02Gettingstarted)
+	- [Brush ideas](#Session02Brushideas)
+	- [Useful functions and variables](#Session02Useful)
 ------
 
 <a name="Firststeps"></a>
@@ -217,7 +220,11 @@ Copy this file to use it as a base for your own brushes, by changing the name of
 ```
 <p align=center>Code Snippet 3: Useful variables</p>
 
+<a name="Session02"></a>
 ## SESSION 02 - Object Placement
+
+<a name="Session02Gettingstarted"></a>
+### Getting started
 
 In this second session, you will design brushes that place objects on the terrain. Here it will be trees, but you can search for or provide other objects.
 
@@ -248,6 +255,7 @@ You can set the object that will be instantiated by drag-and-dropping a model in
 To remove objects, you can use the default tools provided in the original terrain editor by Unity. For this, select the terrain and go to the `terrain > Paint trees`
 tab (in the inspector). You can then shift-click on the terrain to remove objects around your cursor. Note that this works outside of play mode, as opposed to the brushes you implement.
 
+<a name="Session02Brushideas"></a>
 ### Brush ideas
 
 - Random placement in a square
@@ -271,6 +279,7 @@ tab (in the inspector). You can then shift-click on the terrain to remove object
 - Rocks
 - Buildings
 
+<a name="Session02Useful"></a>
 ### Useful functions and variables
 
 ```csharp
