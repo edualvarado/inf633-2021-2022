@@ -217,7 +217,7 @@ Copy this file to use it as a base for your own brushes, by changing the name of
 
 In this second session, you will design brushes that place objects on the terrain. Here it will be trees, but you can search for or provide other objects.
 
-The base code for this session shows how to instantiate one object where the user clicked, and four at the corners of the drawing region. Note that these types of brushes extend the \texttt{InstanceBrush} class instead of the TerrainBrush one used in the previous session.
+The base code for this session shows how to instantiate one object where the user clicked, and four at the corners of the drawing region. Note that these types of brushes extend the `InstanceBrush` class instead of the TerrainBrush one used in the previous session.
 
 ```csharp
 public class SimpleInstanceBrush : InstanceBrush {
@@ -235,11 +235,11 @@ public class SimpleInstanceBrush : InstanceBrush {
 
 Like in the previous session, you can use this file as a base for your own brushes by copying it and changing the file and class names.
 
+You can set the object that will be instantiated by drag-and-dropping a model in the `Object_prefab` parameter of the terrain at run-time. A few models of trees are already in the project, in `04 - Terrain Assets > Environment > Trees` and then the file with a tree icon in one of the three sub-folders.
+
 <p align="center">
     <img src="https://edualvarado.github.io/inf633-2021-2022/02-InstancesBrushGifs/standard_trees.png" width="400">
 </p>
-
-You can set the object that will be instantiated by drag-and-dropping a model in the `Object_prefab` parameter of the terrain at run-time. A few models of trees are already in the project, in `Standard Assets > Environment > SpeedTree` and then the file with a tree icon in one of the three sub-folders.
 
 To remove objects, you can use the default tools provided in the original terrain editor by Unity. For this, select the terrain and go to the `terrain > Paint trees`
 tab (in the inspector). You can then shift-click on the terrain to remove objects around your cursor. Note that this works outside of play mode, as opposed to the brushes you implement.
@@ -250,10 +250,11 @@ tab (in the inspector). You can then shift-click on the terrain to remove object
 - Random placement in a circle
 - Placement on an grid, optionally rotated (crops)
 - Placement in small clusters of objects (bushes, groves)
-- Minimal distance brush, that makes sure that every placed object has $>$\texttt{x} free space
+- Minimal distance brush, that makes sure that every placed object has `> x` free space
 - Terrain-related placement:
--- Prevent placement if the terrain is too steep
--- Prevent placement depending on the altitude
+- Prevent placement if the terrain is too steep (using a threshold angle)
+- Prevent placement depending on the altitude `h`
+- You can try to create arrays of elements, and place them according to these rules (array with [palm, small tree, tall tree], and place them as a function of height ranges).
 
 ### Object ideas
 
