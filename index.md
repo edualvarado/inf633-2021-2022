@@ -215,9 +215,6 @@ Copy this file to use it as a base for your own brushes, by changing the name of
 
 ## SESSION 02 - Object Placement
 
-Work in progress...
-
-<!--
 In this second session, you will design brushes that place objects on the terrain. Here it will be trees, but you can search for or provide other objects.
 
 The base code for this session shows how to instantiate one object where the user clicked, and four at the corners of the drawing region. Note that these types of brushes extend the \texttt{InstanceBrush} class instead of the TerrainBrush one used in the previous session.
@@ -292,8 +289,6 @@ tab (in the inspector). You can then shift-click on the terrain to remove object
   float terrain.max_scale;
 ```
 <p align=center>Code Snippet 6: Useful variables</p>
-
--->
 
 ## SESSION 03 - Character Animation
 
