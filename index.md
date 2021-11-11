@@ -239,9 +239,9 @@ Like in the previous session, you can use this file as a base for your own brush
     <img src="https://edualvarado.github.io/inf633-2021-2022/02-InstancesBrushGifs/standard_trees.png" width="400">
 </p>
 
-You can set the object that will be instantiated by drag-and-dropping a model in the Object\_prefab parameter of the terrain at run-time. A few models of trees are already in the project, in Standard Assets > Environment > SpeedTree and then the file with a tree icon in one of the three sub-folders.
+You can set the object that will be instantiated by drag-and-dropping a model in the `Object_prefab` parameter of the terrain at run-time. A few models of trees are already in the project, in `Standard Assets > Environment > SpeedTree` and then the file with a tree icon in one of the three sub-folders.
 
-To remove objects, you can use the default tools provided in the original terrain editor by Unity. For this, select the terrain and go to the \texttt{terrain > Paint trees}
+To remove objects, you can use the default tools provided in the original terrain editor by Unity. For this, select the terrain and go to the `terrain > Paint trees`
 tab (in the inspector). You can then shift-click on the terrain to remove objects around your cursor. Note that this works outside of play mode, as opposed to the brushes you implement.
 
 ### Brush ideas
