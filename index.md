@@ -236,7 +236,7 @@ public class SimpleInstanceBrush : InstanceBrush {
 Like in the previous session, you can use this file as a base for your own brushes by copying it and changing the file and class names.
 
 <p align="center">
-    <img src="https://edualvarado.github.io/inf633-2021-2022/02-InstancesBrushGifs/standard_trees.png" width="200">
+    <img src="https://edualvarado.github.io/inf633-2021-2022/02-InstancesBrushGifs/standard_trees.png" width="400">
 </p>
 
 You can set the object that will be instantiated by drag-and-dropping a model in the Object\_prefab parameter of the terrain at run-time. A few models of trees are already in the project, in Standard Assets > Environment > SpeedTree and then the file with a tree icon in one of the three sub-folders.
