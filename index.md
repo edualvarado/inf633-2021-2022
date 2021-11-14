@@ -265,6 +265,10 @@ tab (in the inspector). You can then shift-click on the terrain to remove object
     <img src="https://edualvarado.github.io/inf633-2021-2022/02-InstancesBrushGifs/height_dependent.gif" width="400">
 </p>
 
+<p align="center">
+    <img src="https://edualvarado.github.io/inf633-2021-2022/02-InstancesBrushGifs/height_dependent_2.gif" width="400">
+</p>
+
 ### Object ideas
 
 - Trees
