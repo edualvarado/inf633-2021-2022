@@ -347,7 +347,7 @@ This IK technique is called **Fabric IK**. A forward and backward pass are used 
 <p align="center">
     <img src="https://edualvarado.github.io/inf633-2021-2022/03-CharacterAnimation/basic-ik-target-1.gif" width="200">
 	&nbsp; &nbsp;
-    <img src="https://edualvarado.github.io/inf633-2021-2022/01-CharacterAnimation/basic-ik-pole-1.gif" width="200">
+    <img src="https://edualvarado.github.io/inf633-2021-2022/03-CharacterAnimation/basic-ik-pole-1.gif" width="200">
 	&nbsp; &nbsp;
 </p>
 
