@@ -29,6 +29,8 @@
 	- [Getting started](#Session03Gettingstarted)
 	- [Fast IK Demo](#Session03FastIKDemo)
 	- [Quadruped with full IK](#Session03Quadruped)
+	- [Bonus: Controllable character with FK and IK](#Session03Human)
+
 
 ------
 
@@ -371,6 +373,13 @@ At the beginning, moving the **goal** will make the character to follow it witho
 </p>
 
 Once you have it, think about particular applications. Characters that follow autonomously a piece of food, or animals that run away from "anti-goals" such as predators. There are many options! We will see more in the next session.
+
+<a name="Session03Human"></a>
+### Bonus: Controllable character with FK and IK
+
+If you have time, you can try to set a character controllable by Forward Kinematics, and using IK just to adapt its feet on the ground. This character is already included in the hierarchy, *Controllable Characters > Human - (Controller + IK)*. In the Game window, you can change the display to *Display 2* to set a third-person view. You can controll the human using the keyboard arrows or WASD keys.
+
+Inside `03 - Character Animation > 02 - Biped Controller with IK` you will find the script `PlayerControllerIKFeetPlacementTask.cs`. All the information about this task can be found in the repo in a separated document, under the `Docs` folder.
 
 ## SESSION 04 - Crowds and Evolution
 
