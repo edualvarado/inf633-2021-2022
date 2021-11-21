@@ -345,7 +345,7 @@ First, let's go to `03 - Character Animation > 00 - IK Demonstration`. In the sc
 This IK technique is called **Fabric IK**. A forward and backward pass are used to place an end-effector on a **target**, while a **pole** is used to define one of the multiple solutions that one target may contain.
 
 <p align="center">
-    <img src="https://edualvarado.github.io/inf633-2021-2022/03-CharacterAnimation/basic-ik-target-1.gif" width="400">
+    <img src="https://edualvarado.github.io/inf633-2021-2022/03-CharacterAnimation/basic-ik-target-1.gif" width="200">
 	&nbsp; &nbsp;
     <img src="https://edualvarado.github.io/inf633-2021-2022/01-CharacterAnimation/basic-ik-pole-1.gif" width="200">
 	&nbsp; &nbsp;
