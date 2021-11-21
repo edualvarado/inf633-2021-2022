@@ -316,7 +316,7 @@ tab (in the inspector). You can then shift-click on the terrain to remove object
 <a name="Session03Gettingstarted"></a>
 ### Getting started
 
-In this session, you will learn about some important concepts such as Inverse Kinematics, and learn about how to use this technique in order to fully animate one character using procedural methods.
+In this session, you will learn about some important concepts such as **Inverse Kinematics**, and learn about how to use this technique in order to fully animate one character using procedural methods.
 
 Many animation techniques exist: Virtual characters are often animated using direct kinematics - animation clips, described by keyframes for each bone of character, that are normally played in a state machine among other clips. However, other many methods exist. Inverse Kinematics are often used to animate limbs in the other way around: Given a particular condition, IK calcutates the position and rotation of the limbs to satisfy such requirment. It is used very often as a second-layer for direct kinematic animations, for example, to place the feet of the characters correctly to the irregular ground, or to move the arm when the character takes a mug from a table.
 
@@ -334,12 +334,20 @@ In this session, we will learn to convert this...
     <img src="https://edualvarado.github.io/inf633-2021-2022/03-CharacterAnimation/procedural.gif" width="400">
 </p>
 
-Let's start!
+All the necessary files will be in the folder `03 - Character Animation`. Let's start!
 
 <a name="Session03FastIKDemo"></a>
 ### Fast IK Demonstration
 
-Doing...
+First, let's go to `03 - Character Animation > 00 - IK Demonstration`. In the scene, you will learn how to build a simple Fast IK algorithm. The script `FastIK.cs` contains several code snippets that you will need to complete. All the information that you will to understand the code is already included as comments along the script.
+
+This IK technique is called **Fabric IK**. A forward and backward pass are used to place an end-effector on a **target**, while a **pole** is used to define one of the multiple solutions that one target may contain.
+
+<p align="center">
+    <img src="https://edualvarado.github.io/inf633-2021-2022/03-CharacterAnimation/basic-ik-target-1.gif" width="400">
+	&nbsp; &nbsp;
+    <img src="https://edualvarado.github.io/inf633-2021-2022/01-TerrainBrushGifs/basic-ik-pole-1.gif" width="200">
+</p>
 
 <a name="Session03Quadruped"></a>
 ### Quadruped with full IK
