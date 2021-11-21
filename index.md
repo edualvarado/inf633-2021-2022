@@ -319,7 +319,7 @@ tab (in the inspector). You can then shift-click on the terrain to remove object
 
 In this session, you will learn about some important concepts such as **Inverse Kinematics**, and learn about how to use this technique in order to fully animate one character using procedural methods.
 
-Many animation techniques exist: Virtual characters are often animated using direct kinematics - animation clips, described by keyframes for each bone of character, that are normally played in a state machine among other clips. However, other many methods exist. Inverse Kinematics are often used to animate limbs in the other way around: Given a particular condition, IK calcutates the position and rotation of the limbs to satisfy such requirment. It is used very often as a second-layer for direct kinematic animations, for example, to place the feet of the characters correctly to the irregular ground, or to move the arm when the character takes a mug from a table.
+Many animation techniques exist: Virtual characters are often animated using direct kinematics - animation clips, described by keyframes for each bone of character, that are normally played in a state machine among other clips. However, other many methods exist. Inverse Kinematics are often used to animate limbs in the other way around: Given a particular condition, IK calcutates the position and rotation of the limbs to satisfy such requirement. It is used very often as a second-layer for direct kinematic animations, for example, to place the feet of the characters correctly to the irregular ground, or to move the arm when the character takes a mug from a table.
 
 However, you can use IK to animate whole characters as well. Procedural animations define an equation or any other parametrized system which must be followed by the animation, instead of following individual keyframes in the kinematic clips. A ball that falls due to gravity, is just another procedural animation - in this case, the ball follows a physics equation. This techniques are normally denominated as physically-based animations. 
 
@@ -356,19 +356,21 @@ This IK technique is called **Fabric IK**. A forward and backward pass are used 
 
 Now, we can use this knowledge to animate our quadruped:
 
-In the hierarchy, you will find the character in `Controllable Characters > Quadruped - (Procedural)`. It contains the hierarchy of bones, with root at *Hips* and the family of objects to apply IK inside *IK*.
+In the hierarchy, you will find the character in *Controllable Characters > Quadruped - (Procedural)*. It contains the hierarchy of bones, with root at *Hips* and the family of objects to apply IK inside *IK*.
 
 All the necessary files are in `03 - Character Animation > 01 - Quadruped with full IK`.
 
-- `FabricIKQuadruped.cs`: This script is in charge of implementing IK for each leg of the quadruped, given a target and a pole, exactly as before. It can be find for each leg inside *IK* in the character for each leg. Once you have completed `FastIK.cs` in the previous exercise, just copy paste the code snippets to this one. The funtionality is the same. If it is correctly implemented, try moving the targets (**red spheres**) and the poles (**yellow spheres**) to see if it works!
-- `FootStepper.cs`: This file will describe the behavior of the leg. IK only says how the leg should be placed given a particular target. But when (and how) do we move the leg? Here it comes the procedural function that the leg will follow. Moving the target, in the correct moment and way, you will be able to move the legs of the characters given a particular motion (introduced in the next script).
-- `QuadrupedProceduralMotion.cs`: Once we have the legs implemented using the previous two files, all that is left is moving the character! And it will be pretty easy. Since the animation is carried out by IK, the only think we need to do is to move our character as a single object though the scene - IK will do the rest. For this script, the quadruped will follow a **goal**, will track his head to it and adapt is body (and therefore, its legs) when there is a differente in height and slope on the terrain.
+- `FabricIKQuadruped.cs`: This script is in charge of implementing IK for each leg of the quadruped, given a target and a pole, exactly as before. It can be found for each leg inside *IK* in the character hierarchy. Once you have completed `FastIK.cs` in the previous exercise, just copy-paste the code snippets to this one. The funtionality is the same. If it is correctly implemented, try moving the targets (**red spheres**) and the poles (**yellow spheres**) to see if it works!
+- `FootStepper.cs`: This file will describe the behavior of the leg. IK only says how the leg should be placed given a particular target. But when (and how) do we move the leg? Here it comes the procedural function that the legs will follow. By moving the target, in the correct moment and in a particular way, the character will be able to adapts its feet and legs given a particular motion (which is introduced in the next script).
+- `QuadrupedProceduralMotion.cs`: Once we have the legs implemented using the previous two files, all that is left is moving the character in our scene! And it will be pretty simple. Since the animation is carried out completely by IK, the only thing we need to do is to move our character like if it would be a single "floating object" though the scene - IK will do the rest. For this script, the quadruped will follow a **goal**, will track his head to always look at it and adapt is body (and therefore, its legs) when there is a differente in height and slope on the terrain.
 
 At the beginning, moving the **goal** will make the character to follow it without any animation, floating around and going inside the terrain when it gets higher. Your task is to make this character fully responsive when moving the goal. Again, these scripts contain code snippets that you will need to complete. All the information that you need to understand the code is already included as comments along the scripts.
 
 <p align="center">
     <img src="https://edualvarado.github.io/inf633-2021-2022/03-CharacterAnimation/procedural-2.gif" width="400">
 </p>
+
+Once you have it, think about particular applications. Characters that follow autonomously a piece of food, or animals that run away from "anti-goals" such as predators. There are many options! We will see more in the next session.
 
 ## SESSION 04 - Crowds and Evolution
 
