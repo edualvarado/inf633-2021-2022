@@ -25,7 +25,10 @@
 	- [Getting started](#Session02Gettingstarted)
 	- [Brush ideas](#Session02Brushideas)
 	- [Useful functions and variables](#Session02Useful)
-
+- [Session 03 - Character Animation](#Session03)
+	- [Getting started](#Session03Gettingstarted)
+	- [Fast IK Demo](#Session03FastIKDemo)
+	- [Quadruped with full IK](#Session03Quadruped)
 ------
 
 <a name="Firststeps"></a>
@@ -307,9 +310,33 @@ tab (in the inspector). You can then shift-click on the terrain to remove object
 ```
 <p align=center>Code Snippet 6: Useful variables</p>
 
+<a name="Session03"></a>
 ## SESSION 03 - Character Animation
 
-Work in progress...
+<a name="Session03Gettingstarted"></a>
+### Getting started
+
+In this session, you will learn about some important concepts such as Inverse Kinematics, and learn about how to use this technique in order to fully animate one character using procedural methods.
+
+Many animation techniques exist: Virtual characters are often animated using direct kinematics - animation clips, described by keyframes for each bone of character, that are normally played in a state machine among other clips. However, other many methods exist. Inverse Kinematics are often used to animate limbs in the other way around: Given a particular condition, IK calcutates the position and rotation of the limbs to satisfy such requirment. It is used very often as a second-layer for direct kinematic animations, for example, to place the feet of the characters correctly to the irregular ground, or to move the arm when the character takes a mug from a table.
+
+However, you can use IK to animate whole characters as well. Procedural animations define an equation or any other parametrized system which must be followed by the animation, instead of following individual keyframes in the kinematic clips. A ball that falls due to gravity, is just another procedural animation - in this case, the ball follows a physics equation. This techniques are normally denominated as physically-based animations. 
+
+In this session, we will learn to convert this...
+
+...to this...
+
+Let's start!
+
+<a name="Session03FastIKDemo"></a>
+### Fast IK Demonstration
+
+Doing...
+
+<a name="Session03Quadruped"></a>
+### Quadruped with full IK
+
+Doing...
 
 ## SESSION 04 - Crowds and Evolution
 
