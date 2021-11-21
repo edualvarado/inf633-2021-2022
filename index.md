@@ -377,7 +377,7 @@ Once you have it, think about particular applications. Characters that follow au
 <a name="Session03Human"></a>
 ### Bonus: Controllable character with FK and IK
 
-If you have time, you can try to set a character controllable by Forward Kinematics, and using IK just to adapt its feet on the ground. This character is already included in the hierarchy, *Controllable Characters > Human - (Controller + IK)*. In the Game window, you can change the display to *Display 2* to set a third-person view. You can controll the human using the keyboard arrows or WASD keys.
+If you have time, you can try to set a character controllable by Forward Kinematics, and using IK just to adapt its feet on the ground. This character is already included in the hierarchy, *Controllable Characters > Human - (Controller + IK)*. In the Game window, you can change the display to *Display 2* to set a third-person view. You can control the humanoid using the keyboard arrows or WASD keys.
 
 Inside `03 - Character Animation > 02 - Biped Controller with IK` you will find the script `PlayerControllerIKFeetPlacementTask.cs`. All the information about this task can be found in the repo in a separated document, under the `Docs` folder.
 
