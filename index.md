@@ -324,7 +324,15 @@ However, you can use IK to animate whole characters as well. Procedural animatio
 
 In this session, we will learn to convert this...
 
+<p align="center">
+    <img src="https://edualvarado.github.io/inf633-2021-2022/03-CharacterAnimation/no-procedural.gif" width="400">
+</p>
+
 ...to this...
+
+<p align="center">
+    <img src="https://edualvarado.github.io/inf633-2021-2022/03-CharacterAnimation/procedural.gif" width="400">
+</p>
 
 Let's start!
 
