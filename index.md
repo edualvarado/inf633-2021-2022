@@ -372,7 +372,7 @@ At the beginning, moving the **goal** will make the character to follow it witho
     <img src="https://edualvarado.github.io/inf633-2021-2022/03-CharacterAnimation/procedural-2.gif" width="400">
 </p>
 
-Once you have it, think about particular applications. Characters that follow autonomously a piece of food, or animals that run away from "anti-goals" such as predators. There are many options! We will see more in the next session.
+Once you have it, think about particular applications. Characters that follow autonomously a piece of food, or animals that run away from "anti-goals" such as predators. Could we even use some learning-based approach to teach them to follow certain assets? There are many options! We will see more in the next session.
 
 <a name="Session03Human"></a>
 ### Bonus: Controllable character with FK and IK
