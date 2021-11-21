@@ -354,7 +354,15 @@ This IK technique is called **Fabric IK**. A forward and backward pass are used 
 <a name="Session03Quadruped"></a>
 ### Quadruped with full IK
 
-Doing...
+Now, we can use this knowledge to animate our quadruped:
+
+In the hierarchy, you will find the character `Quadruped - (Procedural)` inside the parent `Controllable Characters`. It contains the hierarchy of bones, with root at `Hips` and the family of objects to apply IK inside `IK`.
+
+All the necessary files are in `03 - Character Animation > 01 - Quadruped with full IK`. At the begi
+
+- `FabricIKQuadruped.cs`: This script is in charge of implementing IK for each leg of the quadruped, given a target and a pole, exactly as before. It can be find for each leg inside `IK` in the character for each leg. Once you have completed `FastIK.cs` in the previous exercise, just copy paste the code snippets to this one. The funtionality is the same. If it is correctly implemented, try moving the targets (**red spheres**) and the poles (**yellow spheres**) to see if it works!
+- `FootStepper.cs`: This file will describe the behavior of the leg. IK only says how the leg should be placed given a particular target. But when (and how) do we move the leg? Here it comes the procedural function that the leg will follow. Moving the target, in the correct moment and way, you will be able to move the legs of the characters given a particular motion (introduced in the next script).
+- `QuadrupedProceduralMotion.cs`: Once we have the legs implemented using the previous two files, all that is left is moving the character! And it will be pretty easy. Since the animation is carried out by IK, the only think we need to do is to move our character as a single object though the scene - IK will do the rest. For this script, the quadruped will follow a **goal**, will track his head to it and adapt is body (and therefore, its legs) when there is a differente in height and slope on the terrain.
 
 ## SESSION 04 - Crowds and Evolution
 
