@@ -366,6 +366,10 @@ All the necessary files are in `03 - Character Animation > 01 - Quadruped with f
 
 At the beginning, moving the **goal** will make the character to follow it without any animation, floating around and going inside the terrain when it gets higher. Your task is to make this character fully responsive when moving the goal. Again, these scripts contain code snippets that you will need to complete. All the information that you need to understand the code is already included as comments along the scripts.
 
+<p align="center">
+    <img src="https://edualvarado.github.io/inf633-2021-2022/03-CharacterAnimation/procedural-2.gif" width="400">
+</p>
+
 ## SESSION 04 - Crowds and Evolution
 
 Work in progress...
