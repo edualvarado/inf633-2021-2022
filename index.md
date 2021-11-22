@@ -342,7 +342,7 @@ All the necessary files will be in the folder `03 - Character Animation`. Let's 
 <a name="Session03FastIKDemo"></a>
 ### Fast IK Demonstration
 
-First, let's go to `03 - Character Animation > 00 - IK Demonstration`. In the scene, you will learn how to build a simple Fast IK algorithm. The script `FastIK.cs` contains several code snippets that you will need to complete. All the information that you need to understand the code is already included as comments along the script.
+First, let's go to `03 - Character Animation > 00 - IK Demonstration`. In the scene, you will learn how to build a simple Fast IK algorithm. The script `FabricIK.cs` contains several code snippets that you will need to complete. All the information that you need to understand the code is already included as comments along the script.
 
 This IK technique is called **Fabric IK**. A forward and backward pass are used to place an end-effector on a **target**, while a **pole** is used to define one of the multiple solutions that one target may contain.
 
