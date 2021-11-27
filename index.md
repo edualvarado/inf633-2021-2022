@@ -381,6 +381,72 @@ If you have time, you can try to set a character controllable by Forward Kinemat
 
 Inside `03 - Character Animation > 02 - Biped Controller with IK` you will find the script `PlayerControllerIKFeetPlacementTask.cs`. All the information about this task can be found in the repo in a separated document, under the `Docs` folder.
 
+<a name="Session04"></a>
 ## SESSION 04 - Crowds and Evolution
 
-Work in progress...
+<a name="Session04Gettingstarted"></a>
+### Getting started
+
+During this session, you will be given a basic setup containing simple creatures with **eyes**, a **brain**, and **steering capabilities**, as well as a primitive **evolution method**. With these, the creatures are able to gradually develop from generation to generation in order to learn how to efficiently reach their food. Your goal is to change parts of this base to extend it to your liking. Ideas of such extensions will be given below.
+
+In order to activate the module of this session, select the terrain and activate the checkbox next to the `Genetic Algo` component. When you launch the project, you should see capsules (representing animals) appearing and moving on the terrain. Their color changes from white to black as their hunger increases, and they die after some time if they do not manage to reach food in time. After letting the simulation run for a few generations, you should see the animal counter drastically increase, when some animals become smart enough to efficiently get their food.
+
+<a name="Session04Animals"></a>
+### Animals
+
+The animals created in this session are basic creatures, made of three main components:
+
+- **Receptors**, that allow the animal to gather information about its environment. In the base example, the creatures are equipped with basic eyes that tells them the distance to the nearest food source in a specific direction, if any. This is implemented in the `Animal.UpdateVision()` function, from the file `04 - Crowds and Evolution/Animal.cs`.
+- **Actuators**, that gives the animal the ability to make actions and interact with the environment. Here, the animals automatically and continuously move forward at a constant speed, but have an actuator to rotate their body. This actuator is handled at the end of the function `Animal.Update()`.
+- A **brain** to link the receptors to the actuators, giving the animals a way to make decisions on what to do based on what they sense. A simple neural network with a configurable network structure is used for this purpose in the base project. For example, the array `[5, 3, 3, 1]` passed to its constructor will generate a network with 5 input neurons, 1 output neuron, and 2 hidden layers with 3 neurons each. The details of this class are in the `04 - Crowds and Evolution/NeuralNet.cs` file.
+
+<a name="Session04Evolution"></a>
+### Evolution
+
+A  `genetic algorithm` is used to teach the animals how to steer towards their food, after multiple generations. This works by allowing the animals that reach food to reproduce, thus spreading their genes (parameters of their brain), with minor random modifications to allow evolution. The animals with inefficient genes are unable to reach food before dying, thus encouraging only the spread and evolution of successful animals. This is implemented in the file  `04 - Crowds and Evolution/GeneticAlgo.cs `.
+
+<a name="Session04Resources"></a>
+### Resources
+
+The animals simulated here are designed to be herbivores, that eat by passing over a source of food. Grass grows randomly over the terrain, creating a competition between the different animals to access the resources.
+
+<a name="Session04Ideas"></a>
+### Meta Extensions
+
+- If you have particular terrain zones (water, mountains, etc.), tweak grass spawn parameters to make it appear differently based on the zone. This should create clusters of animals grouping in certain places over time.
+- Better visualisation (receptors, actuators, energy, brain, fitness, etc.). Use methods such as `Debug.DrawRay()` to show how vision works, or lines to connect the animal to the targeted food.
+- Analysis of effects/impact of different changes or abilities (e.g., which is the impact of having a worse vision?). Find optimal configuration for convergence.
+- Actual animal or creature models (import or create). You can try to use the procedural animal created in the previous version.
+- Brain export/import functions to save state to disk and restore at any point later.
+
+### Medium Extensions
+
+- Receptors: other senses (e.g., smell), more refined eyes, self-info (e.g., am I hungry?).
+- Actuators: other ways to move, actions (e.g., actuator to eat food).
+- Brain: more complex networks, different architectures.
+- Genetic algorithm (improve population control; keep track of best animals to instantiate; other mutation types, animal reproduction).
+
+### Complex Extensions
+
+- Prey-predator model, where the predators try to catch preys to eat, and the preys try to evade them (and eat grass at the same time?).
+- Enable physical creature evolution (transmit actuators, receptors, besides the brain to the offspring). Dynamically generate an appearance based on capabilities.
+
+<a name="Session04Useful"></a>
+### Useful functions
+
+```csharp
+  // Update the genetic algo simulation
+  void GeneticAlgo.step();
+  void GeneticAlgo.updateResources();
+
+  // Animal main update function
+  void Animal.Update();
+  // Animal receptors computations
+  void Animal.updateVision();
+
+  // Brain class of the animals
+  class NeuralNet;
+  // Mutate a brain to simulate evolution
+  void NeuralNet.mutate(...);
+```
+<p align=center>Code Snippet 7: Useful functions</p>
