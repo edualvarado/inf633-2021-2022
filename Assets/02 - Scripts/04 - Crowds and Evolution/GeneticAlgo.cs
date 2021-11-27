@@ -4,81 +4,118 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GeneticAlgo : MonoBehaviour {
+public class GeneticAlgo : MonoBehaviour
+{
 
-    [Header("Genetic algorithm parameters")]
-    public int pop_size = 100;
-    public GameObject prefab;
+    [Header("Genetic Algorithm parameters")]
+    public int popSize = 100;
+    public GameObject animalPrefab;
 
     [Header("Dynamic elements")]
-    public float vegetation_growth_rate = 1.0f;
-    private float curr_growth;
+    public float vegetationGrowthRate = 1.0f;
+    public float currentGrowth;
 
     private List<GameObject> animals;
-
     protected Terrain terrain;
-    protected CustomTerrain cterrain;
-    protected float width, height;
+    protected CustomTerrain customTerrain;
+    protected float width;
+    protected float height;
 
-    void Start() {
+    void Start()
+    {
+        // Retrieve terrain.
         terrain = Terrain.activeTerrain;
-        cterrain = GetComponent<CustomTerrain>();
-
-        curr_growth = 0.0f;
-
-        animals = new List<GameObject>();
+        customTerrain = GetComponent<CustomTerrain>();
         width = terrain.terrainData.size.x;
         height = terrain.terrainData.size.z;
-        for (int i = 0; i < pop_size; i++) {
+
+        // Initialize terrain growth.
+        currentGrowth = 0.0f;
+
+        // Initialize animals array.
+        animals = new List<GameObject>();
+        for (int i = 0; i < popSize; i++)
+        {
             GameObject animal = makeAnimal();
             animals.Add(animal);
         }
     }
 
-    void Update() {
-        while (animals.Count < pop_size / 2) {
+    void Update()
+    {
+        // Keeps animal to a minimum.
+        while (animals.Count < popSize / 2)
+        {
             animals.Add(makeAnimal());
         }
+        customTerrain.debug.text = "N° animals: " + animals.Count.ToString();
 
+        // Update grass elements/food resources.
         updateResources();
-        cterrain.debug.text = animals.Count.ToString() + " animals";
     }
 
-    public void updateResources() {
-        Vector2 detail_sz = cterrain.detailSize();
-        int[,] details = cterrain.getDetails();
-        curr_growth += vegetation_growth_rate;
-        while (curr_growth > 1.0f) {
+    /// <summary>
+    /// Method to place grass or other resource in the terrain.
+    /// </summary>
+    public void updateResources()
+    {
+        Vector2 detail_sz = customTerrain.detailSize();
+        int[,] details = customTerrain.getDetails();
+        currentGrowth += vegetationGrowthRate;
+        while (currentGrowth > 1.0f)
+        {
             int x = (int)(UnityEngine.Random.value * detail_sz.x);
             int y = (int)(UnityEngine.Random.value * detail_sz.y);
             details[y, x] = 1;
-            curr_growth -= 1.0f;
+            currentGrowth -= 1.0f;
         }
-        cterrain.saveDetails();
+        customTerrain.saveDetails();
     }
 
-    public GameObject makeAnimal(Vector3 position) {
-        GameObject animal = Instantiate(prefab, transform);
-        animal.GetComponent<Animal>().setup(cterrain, this);
+    /// <summary>
+    /// Method to instantiate an animal prefab. It must contain the animal.cs class attached.
+    /// </summary>
+    /// <param name="position"></param>
+    /// <returns></returns>
+    public GameObject makeAnimal(Vector3 position)
+    {
+        GameObject animal = Instantiate(animalPrefab, transform);
+        animal.GetComponent<Animal>().Setup(customTerrain, this);
         animal.transform.position = position;
         animal.transform.Rotate(0.0f, UnityEngine.Random.value * 360.0f, 0.0f);
         return animal;
     }
-    public GameObject makeAnimal() {
+
+    /// <summary>
+    /// If makeAnimal() is called without position, we randomize it on the terrain.
+    /// </summary>
+    /// <returns></returns>
+    public GameObject makeAnimal()
+    {
         Vector3 scale = terrain.terrainData.heightmapScale;
         float x = UnityEngine.Random.value * width;
         float z = UnityEngine.Random.value * height;
-        float y = cterrain.getInterp(x/scale.x, z/scale.z);
+        float y = customTerrain.getInterp(x / scale.x, z / scale.z);
         return makeAnimal(new Vector3(x, y, z));
     }
 
-    public void addOffspring(Animal parent) {
+    /// <summary>
+    /// Method to add an animal inherited from anothed. It spawns where the parent was.
+    /// </summary>
+    /// <param name="parent"></param>
+    public void addOffspring(Animal parent)
+    {
         GameObject animal = makeAnimal(parent.transform.position);
-        animal.GetComponent<Animal>().inheritBrain(parent.getBrain(), true);
+        animal.GetComponent<Animal>().InheritBrain(parent.GetBrain(), true);
         animals.Add(animal);
     }
 
-    public void removeAnimal(Animal animal) {
+    /// <summary>
+    /// Remove instance of an animal.
+    /// </summary>
+    /// <param name="animal"></param>
+    public void removeAnimal(Animal animal)
+    {
         animals.Remove(animal.transform.gameObject);
         Destroy(animal.transform.gameObject);
     }
