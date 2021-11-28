@@ -30,7 +30,12 @@
 	- [Fast IK Demo](#Session03FastIKDemo)
 	- [Quadruped with full IK](#Session03Quadruped)
 	- [Bonus: Controllable character with FK and IK](#Session03Human)
-
+- [Session 04 - Crowds and Evolution](#Session04)
+	- [Getting started](#Session04Gettingstarted)
+	- [Animals](#Session04Animals)
+	- [Evolution](#Session04Evolution)
+	- [Resources](#Session04Resources)
+	- [Extensions](#Session04Ideas)
 
 ------
 
