@@ -423,6 +423,7 @@ The animals simulated here are designed to be herbivores, that eat by passing ov
 - Analysis of effects/impact of different changes or abilities (e.g., which is the impact of having a worse vision?). Find optimal configuration for convergence.
 - Actual animal or creature models (import or create). You can try to use the procedural animal created in the previous version.
 - Brain export/import functions to save state to disk and restore at any point later.
+- Neural Net vs. RL (ml-agents): Does it make any difference?
 
 ### Medium Extensions
 
